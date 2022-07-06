@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&family=Roboto+Mono&display=swap');
 * {
     padding: 0px;
     margin: 0px;
@@ -45,8 +45,14 @@ ul {
     color: #0d6efd;
 }
 
-.banner {
+.containerImages {
     margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.containerImages img {
+    max-width: 500px;
 }
 
 .contendorServicios {
@@ -61,6 +67,12 @@ ul {
     display: flex;
     flex-wrap: wrap;
     padding: .5rem;
+}
+
+.titles {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .card {
@@ -165,4 +177,25 @@ footer {
     iframe {
         width: 70%;
     }
+}
+
+.containerImages {
+    width: 85vw;
+}
+
+.containerImages img {
+    height: 100%;
+    flex: 1;
+    height: 60vmin;
+    display: flex;
+    gap: 5px;
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.containerImages img:hover {
+    flex: 4;
 }
